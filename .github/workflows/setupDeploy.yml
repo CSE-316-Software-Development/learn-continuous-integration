@@ -1,10 +1,11 @@
 on:
   push:
-    - deploy
+    branches:
+      - deploy
 
 jobs:
-  "setup-database":
-    run-ons: cs5500-self-hosted
+  setup-database:
+    runs-on: cs5500-self-hosted
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
