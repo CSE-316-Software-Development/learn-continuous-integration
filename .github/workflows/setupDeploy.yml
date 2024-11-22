@@ -4,7 +4,7 @@ on:
       - deploy
 
 jobs:
-  setup-database:
+  "setup-database":
     runs-on: cs5500-self-hosted
     steps:
       - name: Checkout Repository
