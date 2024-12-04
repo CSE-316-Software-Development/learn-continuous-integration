@@ -11,6 +11,7 @@ export interface IBook extends Document {
   genre: IGenre[];
 }
 
+// Define the Book schema and model.
 var BookSchema: Schema<IBook> = new Schema(
   {
     title: {type: String, required: true},

@@ -1,16 +1,21 @@
-name: Prepare Database
+name: Deploy
 
 on:
   push:
     branches:
       - deploy
 
-jobs: 
-  "setup-database":
+jobs:
+  setup-sample-data:
     runs-on: self-hosted
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
 
       - name: Install Dependencies
         run: npm install
