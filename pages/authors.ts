@@ -20,7 +20,7 @@ router.get('/', async (_, res: Response) => {
       res.send('No authors found');
     }
   } catch (error) {
-    console.error('Error processing request:', error);
+    console.error('Error processing :', error);
     res.status(500).send('Error processing request');
   }
 });
