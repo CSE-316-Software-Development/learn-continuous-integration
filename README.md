@@ -44,4 +44,4 @@ Create a new workflow yml file that captures the following continuous integratio
 
 - When new changes are pushed to the deploy branch, the sample data should be setup using the scripts in `remove_db.ts` and `insert_sample_db.ts`.
 
-Test setup deploy
+Test setup deploy, changed yaml files
