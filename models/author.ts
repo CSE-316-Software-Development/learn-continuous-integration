@@ -28,6 +28,10 @@ interface IAuthorModel extends Model<IAuthor> {
 }
 
 /**
+ * This is a change to test continuous integration
+ */
+
+/**
  * A schema to define the structure of author documents in MongoDB.
  * It includes virtual properties for the author's full name and lifespan.
  * It also includes static methods for getting author count, all authors, and author ID by name.
