@@ -25,6 +25,8 @@ jobs:
         run: npm test
 
       - name: Seed sample database
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
         run: |
-          npx ts-node remove_db.ts
-          npx ts-node insert_sample_data.ts
+          npx ts-node remove_db.ts "$MONGO_URI"
+          npx ts-node insert_sample_data.ts "$MONGO_URI"
